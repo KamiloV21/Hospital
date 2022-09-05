@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9AB00F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{33F084F4-E60C-4C58-999E-66E4430110D7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{31E30B35-6C2E-4FE5-A33F-6D0337B642C8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HospitalWebApi", "HospitalWebApi\HospitalWebApi.csproj", "{6BB967DE-A98F-4701-9DC4-48387C788AF6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{5AF75F14-4657-45B1-BD23-A32CAD304C46}"
@@ -19,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D1921A41-9222-435D-9CC3-F9F40FFB20B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.UnitTests", "Hospital.UnitTests\Hospital.UnitTests.csproj", "{D33591BC-D566-4279-80A3-4EDF2F7E27FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital.UnitTests", "Hospital.UnitTests\Hospital.UnitTests.csproj", "{D33591BC-D566-4279-80A3-4EDF2F7E27FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

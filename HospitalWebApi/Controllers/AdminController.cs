@@ -49,10 +49,10 @@ namespace HospitalWebApi.Controllers
         [HttpDelete("{id:int}/doctor/delete")]
         public async Task<IActionResult> DeleteDoctor([FromRoute] int id)
         {
-            if(await _doctorRepository.GetByIdAsync(id) == null)
-			{
+            if (await _doctorRepository.GetByIdAsync(id) == null)
+            {
                 return NotFound("Doctor not found");
-			}
+            }
             await _doctorRepository.DeleteByIdAsync(id);
 
             return Ok();

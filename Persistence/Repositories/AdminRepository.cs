@@ -29,10 +29,9 @@ namespace Persistence.Repositories
         }
 
         public async Task AddAdminAsync(Admin admin)
-		{
+        {
             await _context.Admins.AddAsync(admin);
             await _context.SaveChangesAsync();
-		}
-
+        }
     }
 }

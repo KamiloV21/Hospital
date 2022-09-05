@@ -13,6 +13,6 @@ namespace Domain.Repositories
         Task AddDoctorAsync(Doctor doctor);
         Task DeleteByIdAsync(int id);
         Task UpdateAsync(Doctor doctor);
-		Task GetByDateAsync(DateTime startDate);
+        Task GetByDateAsync(DateTime startDate);
     }
 }

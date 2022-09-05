@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
-	public class OrderRepository : IOrderRepository
+    public class OrderRepository : IOrderRepository
     {
         private readonly DoctorShopContext _doctorShopContext;
 
@@ -25,7 +25,7 @@ namespace Persistence.Repositories
 
         public async Task DeleteOrderAsync(int id)
         {
-            var toRemove = await _doctorShopContext.Orders.Where(x=>x.Id==id).FirstAsync();
+            var toRemove = await _doctorShopContext.Orders.Where(x => x.Id == id).FirstAsync();
             _doctorShopContext.Remove(toRemove);
             await _doctorShopContext.SaveChangesAsync();
         }
@@ -42,13 +42,13 @@ namespace Persistence.Repositories
         public async Task<Order> GetByNameAsync(string name, string lastName)
         {
             return await _doctorShopContext.Orders.Where(x => x.Firstname == name && x.Lastname == lastName).FirstAsync();
-             
+
         }
 
         public async Task<Order> GetByIdAsync(int id)
         {
             return await _doctorShopContext.Orders.Where(x => x.Id == id).FirstAsync();
-        } 
+        }
 
         public async Task UpdateOrderAsync(Order order)
         {
@@ -74,5 +74,5 @@ namespace Persistence.Repositories
 
             return false;
         }
-	}
+    }
 }
