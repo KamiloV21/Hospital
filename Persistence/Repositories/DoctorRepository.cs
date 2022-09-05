@@ -51,6 +51,7 @@ namespace Persistence.Repositories
             _doctorShopContext.Doctors.Update(doctor);
             await _doctorShopContext.SaveChangesAsync();
         }
+
         Task IDoctorRepository.GetByDateAsync(DateTime startDate)
 		{
 			throw new NotImplementedException();
