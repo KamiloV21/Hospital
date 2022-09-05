@@ -8,7 +8,7 @@ using Domain.Entities;
 
 namespace HospitalWebApi.Controllers
 {
-    [Route("api/user")]
+    [Route("api")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -108,7 +108,7 @@ namespace HospitalWebApi.Controllers
         private async Task<bool> UpdateAsync(Order order, int id)
         {
             var toUpdate = await _orderRepository.GetByIdAsync(id);
-            if (toUpdate!=null)
+            if (toUpdate != null)
             {
                 toUpdate.Firstname = order.Firstname;
                 toUpdate.Lastname = order.Lastname;
@@ -130,7 +130,7 @@ namespace HospitalWebApi.Controllers
             var toDel = await _orderRepository.GetByIdAsync(id);
             if (toDel != null)
             {
-                var message= _messageCreator.MessageDelete(toDel);
+                var message = _messageCreator.MessageDelete(toDel);
                 var email = toDel.Email;
                 await _orderRepository.DeleteOrderAsync(id);
                 

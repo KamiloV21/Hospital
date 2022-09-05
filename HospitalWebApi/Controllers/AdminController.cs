@@ -10,7 +10,7 @@ using Domain.Entities;
 namespace HospitalWebApi.Controllers
 {
     [Authorize]
-    [Route("api/admin")]
+    [Route("api")]
     [ApiController]
     
     public class AdminController : ControllerBase

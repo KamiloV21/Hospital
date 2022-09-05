@@ -59,7 +59,7 @@ namespace Persistence.Repositories
         public async Task<bool> UpdateAsync(Order order, int id)
         {
             var toUpdate = await GetByIdAsync(id);
-            if (toUpdate!=null)
+            if (toUpdate != null)
             {
                 toUpdate.Firstname = order.Firstname;
                 toUpdate.Lastname = order.Lastname;

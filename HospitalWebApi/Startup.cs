@@ -67,14 +67,14 @@ namespace HospitalWebApi
 						{
 							Reference=new OpenApiReference
 							{
-								Type=ReferenceType.SecurityScheme,
-								Id="basic"
+								Type = ReferenceType.SecurityScheme,
+								Id = "basic"
 							}
 
 						},
 						new string[]{}
 					}
-				});
+				}) ;
 			});
 
 			services.AddAuthentication("BasicAuthentication")
